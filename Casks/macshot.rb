@@ -1,7 +1,7 @@
 # Homebrew cask template — CI generates the final cask from packaging/app.env on each release.
 cask "macshot" do
-  version "0.1.1"
-  sha256 "95f144579e3319da9ab458deefb53b65a5a054c8a5b74c107f9537564b8c0240"
+  version "0.1.2"
+  sha256 "a277097019d2904a3f30fcbeff9b3ecca703e59fe34646440c92a8ff62dd6092"
 
   url "https://github.com/andresousadotpt/macshot/releases/download/v#{version}/macshot-#{version}.zip"
   name "Macshot"
