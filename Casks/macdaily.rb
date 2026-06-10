@@ -1,8 +1,8 @@
 # Homebrew cask template for macdaily.
-# CI updates version + sha256 "bd2a0325405775a0eb198f1f8eef64403a66a58a3355bb479b956ff400c53c91"
+# CI updates version + sha256 "67ca6f7e803961acb63c3eb21923360cdbb6d129d4fe2e4cfb8903dfcf1ba9f5"
 cask "macdaily" do
-  version "0.1.0"
-  sha256 "bd2a0325405775a0eb198f1f8eef64403a66a58a3355bb479b956ff400c53c91"
+  version "0.1.1"
+  sha256 "67ca6f7e803961acb63c3eb21923360cdbb6d129d4fe2e4cfb8903dfcf1ba9f5"
 
   url "https://github.com/andresousadotpt/macdaily/releases/download/v#{version}/macdaily-#{version}.zip"
   name "macdaily"
