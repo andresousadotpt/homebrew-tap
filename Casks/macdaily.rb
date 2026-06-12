@@ -1,7 +1,7 @@
 # Homebrew cask template — CI generates the final cask from packaging/app.env on each release.
 cask "macdaily" do
-  version "0.1.7"
-  sha256 "e3306c37727ff48107b33c44b7e1591fe876a4d021c8bb5cb84fa3d558194c6d"
+  version "0.1.8"
+  sha256 "015d96342d1ed8edcb6f7dc518214a954c896158b5daf9af9b0b96359bf02dbc"
 
   url "https://github.com/andresousadotpt/macdaily/releases/download/v#{version}/macdaily-#{version}.zip"
   name "MacDaily"
