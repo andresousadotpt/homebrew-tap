@@ -1,7 +1,7 @@
 # Homebrew cask template — CI generates the final cask from packaging/app.env on each release.
 cask "macmouse" do
-  version "0.1.5"
-  sha256 "4478370a4c4be1efbc707e8901d09c93ae04ab39c771443ad5434e6292a1e995"
+  version "0.1.6"
+  sha256 "afd0cd37d89c7b241367d1292cb4cc77d2a1cc5d2b4773d59982b8e8f43be5d3"
 
   url "https://github.com/andresousadotpt/macmouse/releases/download/v#{version}/macmouse-#{version}.zip"
   name "MacMouse"
@@ -12,6 +12,16 @@ cask "macmouse" do
   depends_on macos: :sonoma
 
   app "macmouse.app"
+
+  # Releases are signed but not notarized (no paid Apple Developer account), so
+  # clear the download quarantine to skip the "Apple could not verify" prompt.
+  # Runs on the unpacked app before it is moved into place.
+  preflight_steps do
+    run "/usr/bin/xattr",
+        args:           ["-dr", "com.apple.quarantine", "macmouse.app"],
+        chdir:          ".",
+        writable_paths: ["macmouse.app"]
+  end
 
   zap trash: "~/Library/Application Support/MacMouse"
 
