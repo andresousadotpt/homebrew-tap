@@ -1,7 +1,7 @@
 # Homebrew cask template — CI generates the final cask from packaging/app.env on each release.
 cask "macban" do
-  version "0.1.1"
-  sha256 "6a60f996af677cc72e5dc7f7d502a56bb105130fc12f4336e30268c348e06b7f"
+  version "0.1.2"
+  sha256 "7ae4d0593405a14b73f91a61b4f4971661cf25152d8915b137fc6a43eec0dd2d"
 
   url "https://github.com/andresousadotpt/macban/releases/download/v#{version}/macban-#{version}.zip"
   name "macban"
