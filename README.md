@@ -16,3 +16,4 @@ If macOS blocks the app on first launch, see the [build-from-source instructions
 | Cask | Description |
 | ---- | ----------- |
 | [macdaily](https://github.com/andresousadotpt/macdaily) | Daily markdown notes |
+| [macmouse](https://github.com/andresousadotpt/macmouse) | Smooth scrolling and button remapping for third-party mice |
