@@ -1,7 +1,7 @@
 # Homebrew cask template — CI generates the final cask from packaging/app.env on each release.
 cask "macmouse" do
-  version "0.1.7"
-  sha256 "16f1a1861023d2718e2658cb2a02cc00915376cc694f4fe3c9d4f1f0cf8b07c9"
+  version "0.1.8"
+  sha256 "af76fd80532b4d3cdc4b14750be18ee70ce38bbfc0a34d60e8e7d8b4f753be60"
 
   url "https://github.com/andresousadotpt/macmouse/releases/download/v#{version}/macmouse-#{version}.zip"
   name "MacMouse"
